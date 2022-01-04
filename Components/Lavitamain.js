@@ -19,7 +19,7 @@ const Lavitamain = () => {
   
     return (
       <div>
-        <div className="z-50 fixed left-4 top-3">
+        <div className="z-50 fixed pl-6 top-3">
       <Hamburger 
           toggled={isOpen} 
           toggle={setOpen} 
@@ -37,25 +37,43 @@ const Lavitamain = () => {
       />
       </div>
       <div className="h-screen">
-      <div className="h-screen flex justify-center items-center	anim1" ref={el}>
-        <span className="text-7xl sm:text-8xl lg:text-10xl">L</span>
-        <span className="text-7xl sm:text-8xl lg:text-10xl">A</span>
-        <span className="text-7xl sm:text-8xl lg:text-10xl">V</span>
-        <span className="text-7xl sm:text-8xl lg:text-10xl">I</span>
-        <span className="text-7xl sm:text-8xl lg:text-10xl">T</span>
-        <span className="text-7xl sm:text-8xl lg:text-10xl">A</span>
-      <div className="relative top-4 right-14 -z-10">
-      <Image
-      src="https://res.cloudinary.com/dyvgcv5se/image/upload/v1639954913/Test/collov-home-design-js8AQlw71HA-unsplash_qj61bq.jpg"
-      alt="mainpic"
-      height={480}
-      width={640}
-      layout={"intrinsic"}
-      />
+      <div className="h-screen flex justify-between items-center anim1" ref={el}>
+
+      <div className="w-1/12 pl-10 h-screen flex justify-between items-center">
+
+        <div className="h-1/4 flex flex-col justify-between items-center">
+          <h2 className=' skew-x-12'>FB</h2>
+          <h2 className=' skew-x-12'>IG</h2>
+          <h2 className=' skew-x-12'>VK</h2>
+        </div>
+   
+      </div>
+
+      <div className="w-11/12 flex justify-center items-center">
+        <div>
+          <span className="text-7xl sm:text-8xl lg:text-10xl">L</span>
+          <span className="text-7xl sm:text-8xl lg:text-10xl">A</span>
+          <span className="text-7xl sm:text-8xl lg:text-10xl">V</span>
+          <span className="text-7xl sm:text-8xl lg:text-10xl">I</span>
+          <span className="text-7xl sm:text-8xl lg:text-10xl">T</span>
+          <span className="text-7xl sm:text-8xl lg:text-10xl">A</span>
+        </div>
+      
+        <div className="relative -z-10 right-14">
+          <Image
+            src="https://res.cloudinary.com/dyvgcv5se/image/upload/v1639954913/Test/collov-home-design-js8AQlw71HA-unsplash_qj61bq.jpg"
+            alt="mainpic"
+            height={480}
+            width={640}
+            layout={"intrinsic"}
+          />
+        </div>
+
+      </div>
+
       </div>
       </div>
-     
-      </div>
+      
       </div>
   
     )

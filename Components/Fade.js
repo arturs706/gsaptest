@@ -5,19 +5,16 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 export const Fade = () => {
     const sections = [
         {
-          title: 'Title 1',
-          subtitle: 'Subtitle 1',
-          color: "bg-red-100"
+          title: 'Jaunums',
+          data: ''
         },
         {
           title: 'Title 2',
-          subtitle: 'Subtitle 2',
-          color: "bg-red-200"
+          data: ''
         },
         {
           title: 'Title 3',
-          subtitle: 'Subtitle 3',
-          color: "bg-red-300"
+          data: ''
         }
       ];
     const revealRefs = useRef([]);
@@ -56,11 +53,10 @@ export const Fade = () => {
 return (
     <div className="App ">
         {
-            sections.map(({title, subtitle, color}) => (
+            sections.map(({title, data}) => (
                 <div className={`h-screen flex justify-center`} key={title} ref={addToRefs}>
-                    <h2>{title}</h2>
-                    <p>{subtitle}</p>
-                    <h2>{color}</h2>
+                    <h2 className="text-4xl">{title}</h2>
+                    {data}
                 </div>
             ))
         }

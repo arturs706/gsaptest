@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
+        'xss': '0.6rem',
         '10xl': '12rem'
       },
       colors: {
@@ -16,6 +17,9 @@ module.exports = {
           900: '#4c473b',
         }
       },
+      spacing: {
+        98: '26rem',
+      }
     },
   },
   plugins: [],
